@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags for character set and viewport settings -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the page -->
+    <title>Weather App</title>
+    <!-- Link to external stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- External JavaScript file for logic -->
+    <script type="text/javascript" src="index.js"></script>
+    <!-- Favicon for the page -->
+    <link rel="icon" type="image/x-icon" href="/Images/fevicon.png">
+    <!-- Font Awesome library for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!-- Search container with input box and search button -->
+    <div class="search-container">
+        <div class="search_box">
+            <input type="text" id="city">
+            <button type="submit" onclick="city()"><i class="fa fa-search"></i></button>
+        </div>
+    </div>
+
+    <!-- Main details section showing city name, temperature, time, and weather information -->
+    <div class="Main_details">
+        <h2 id="cityName">------, --</h2>
+        <h2 id="temp">--</h2><span class="temp">&nbsp;C</span> 
+        <h2 id="time">--:--:--</h2>
+        <p id="main_information" class="main_information">Weather: ------ &nbsp;&nbsp;&nbsp; visibility: ----- &nbsp;&nbsp;&nbsp;</p>
+        <p id="main_information2" class="main_information">Wind Speed: --- &nbsp;&nbsp;&nbsp; Wind deg: --- &nbsp;&nbsp;&nbsp;</p>
+    </div><!-- ... (your existing HTML) ... -->
+
+    <!-- Container for displaying 5-day forecast -->
+    <div class="container">
+        <!-- Day 1 container -->
+        <div class="day-container" id="day1-container">
+            <div class="day">
+                <span id="day1">----/--/--</span><br>
+                <span id="tem1">---</span><br>
+                <span id="desc1">--------</span><br>
+            </div>
+        </div>
+
+        <!-- Day 2 container -->
+        <div class="day-container" id="day2-container">
+            <div class="day">
+                <span id="day2">----/--/--</span><br>
+                <span id="tem2">---</span><br>
+                <span id="desc2">--------</span><br>
+            </div>
+        </div>
+
+        <!-- Day 3 container -->
+        <div class="day-container" id="day3-container">
+            <div class="day">
+                <span id="day3">----/--/--</span><br>
+                <span id="tem3">---</span><br>
+                <span id="desc3">--------</span><br>
+            </div>
+        </div>
+
+        <!-- Day 4 container -->
+        <div class="day-container" id="day4-container">
+            <div class="day">
+                <span id="day4">----/--/--</span><br>
+                <span id="tem4">---</span><br>
+                <span id="desc4">--------</span><br>
+            </div>
+        </div>
+
+        <!-- Day 5 container -->
+        <div class="day-container" id="day5-container">
+            <div class="day">
+                <span id="day5">----/--/--</span><br>
+                <span id="tem5">---</span><br>
+                <span id="desc5">--------</span><br>
+            </div>
+        </div>
+    </div>
+    
+</body>
+
+</html>

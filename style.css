@@ -1,0 +1,84 @@
+/* Resetting default margin and padding for the body */
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 13px; /* Setting the default font size */
+    background-image: url(Images/background_image.webp); /* Setting background image */
+    background-repeat: no-repeat; /* Preventing background image from repeating */
+    background-size: cover; /* Making sure background image covers the entire viewport */
+    overflow-x: hidden; /* Hiding horizontal overflow to prevent scrolling */
+}
+
+/* Styling for the search container */
+.search-container {
+    display: flex; /* Using flexbox to arrange child elements */
+    justify-content: flex-end; /* Aligning items to the right within the container */
+    padding: 10px; /* Adding padding for spacing */
+}
+
+/* Styling for the search box */
+.search-box {
+    display: flex; /* Using flexbox for the search box */
+}
+
+/* Styling for the input field in the search box */
+input {
+    padding: 5px; /* Adding padding to the input field */
+}
+
+/* Styling for the search button */
+button {
+    padding: 5px;
+    margin-left: 5px; /* Adding space between the input and button */
+}
+
+/* Styling for the main details section */
+.Main_details {
+    text-align: center; /* Center-aligning text in the main details section */
+    color: white; /* Setting text color to white */
+}
+
+/* Styling for the city name in the main details section */
+#cityName {
+    font-size: 28px; /* Setting font size for the city name */
+}
+
+/* Styling for the temperature in the main details section */
+#temp {
+    font-size: 80px; /* Setting font size for the temperature */
+    display: inline; /* Displaying the temperature inline */
+}
+
+/* Additional styling for temperature text */
+.temp {
+    font-size: 80px;
+}
+
+/* Styling for the time in the main details section */
+#time {
+    font-size: 28px; /* Setting font size for the time */
+}
+
+/* Styling for additional main information */
+.main_information {
+    font-size: 18px; /* Setting font size for additional information */
+}
+
+/* Styling for the container holding forecast information */
+.container {
+    display: flex; /* Using flexbox for the container */
+    flex-wrap: wrap; /* Allowing the container to wrap its children to the next line */
+    justify-content: space-evenly; /* Adding space between the wrapped elements */
+    margin-bottom: 30px;
+    }
+
+/* Styling for individual day containers within the forecast */
+.day-container {
+    display: flex; /* Using flexbox for individual day containers */
+    color: white; /* Setting text color to white */
+    flex-direction: row; /* Setting the flex direction to row */
+    align-items: center; /* Aligning items in the center vertically */
+    font-size: 15.5px; /* Setting font size for the forecast information */
+    margin-top: 70px; /* Adding top margin for spacing */
+    overflow: hidden; /* Hiding overflow */
+}
